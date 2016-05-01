@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 496108}
   - 212: {fileID: 21226148}
   - 61: {fileID: 6184952}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Dirt_GrassOppositeSides
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -83,6 +83,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_TagString
       value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
