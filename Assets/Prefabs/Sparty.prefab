@@ -13,6 +13,7 @@ GameObject:
   - 50: {fileID: 5079002}
   - 61: {fileID: 6166300}
   - 82: {fileID: 8262560}
+  - 95: {fileID: 9501870}
   m_Layer: 8
   m_Name: Sparty
   m_TagString: Player
@@ -151,6 +152,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!95 &9501870
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 138214}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2956e981d6c7b45f9b6a0837bd195cf6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &21223916
 SpriteRenderer:
   m_ObjectHideFlags: 1
