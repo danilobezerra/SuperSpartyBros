@@ -468,7 +468,7 @@ Transform:
   - {fileID: 55026630}
   - {fileID: 1460518334}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!1001 &224069392
 Prefab:
   m_ObjectHideFlags: 0
@@ -624,6 +624,7 @@ GameObject:
   - 124: {fileID: 458235994}
   - 81: {fileID: 458235993}
   - 82: {fileID: 458235992}
+  - 114: {fileID: 458235998}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -772,6 +773,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &458235998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 458235991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2644e6ea4ed2147f1b64d5a34cf86362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 595591876}
+  damping: 0
+  lookAheadFactor: 0
+  lookAheadReturnSpeed: 0
+  lookAheadMoveThreshold: 0
 --- !u!1001 &482942426
 Prefab:
   m_ObjectHideFlags: 0
@@ -918,6 +935,10 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 445090, guid: eb9b59c3661d3420c8d57614b24dde29, type: 2}
   m_PrefabInternal: {fileID: 1386447625}
+--- !u!4 &595591876 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 482006, guid: ce9c46e53a8e54d89948e63a55ff88c7, type: 2}
+  m_PrefabInternal: {fileID: 332890407}
 --- !u!4 &706064085 stripped
 Transform:
   m_PrefabParentObject: {fileID: 445090, guid: eb9b59c3661d3420c8d57614b24dde29, type: 2}
@@ -1393,7 +1414,7 @@ Transform:
   - {fileID: 951777960}
   - {fileID: 1044601755}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!4 &1329514973 stripped
 Transform:
   m_PrefabParentObject: {fileID: 429438, guid: a1d94d6efed8d48caadbac8d5ac4f6d8, type: 2}
@@ -1643,7 +1664,7 @@ Transform:
   - {fileID: 1329514973}
   - {fileID: 1041224072}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!4 &1814006071 stripped
 Transform:
   m_PrefabParentObject: {fileID: 478924, guid: 0084f0456662f434a91c89f359a5154b, type: 2}
