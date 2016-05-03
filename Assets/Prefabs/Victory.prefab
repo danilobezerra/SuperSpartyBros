@@ -74,7 +74,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   taken: 0
-  explosion: {fileID: 0}
+  explosion: {fileID: 146604, guid: 15c5f63bc806942f892263d63f47e2ca, type: 2}
 --- !u!212 &21203050
 SpriteRenderer:
   m_ObjectHideFlags: 1
