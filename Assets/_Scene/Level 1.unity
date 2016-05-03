@@ -1565,6 +1565,78 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 445090, guid: eb9b59c3661d3420c8d57614b24dde29, type: 2}
   m_PrefabInternal: {fileID: 2145771788}
+--- !u!1 &1061798443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1061798444}
+  - 61: {fileID: 1061798445}
+  - 50: {fileID: 1061798447}
+  - 114: {fileID: 1061798446}
+  m_Layer: 12
+  m_Name: HeadCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1061798444
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1061798443}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1404997265}
+  m_RootOrder: 0
+--- !u!61 &1061798445
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1061798443}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -0.09, y: 0.09}
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.06}
+--- !u!114 &1061798446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1061798443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08c0ab61ced643679c3f91f95b15830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &1061798447
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1061798443}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!1001 &1061988781
 Prefab:
   m_ObjectHideFlags: 0
@@ -1824,6 +1896,8 @@ GameObject:
   - 61: {fileID: 1404997262}
   - 50: {fileID: 1404997267}
   - 82: {fileID: 1404997266}
+  - 95: {fileID: 1404997268}
+  - 114: {fileID: 1404997269}
   m_Layer: 12
   m_Name: Enemy
   m_TagString: Enemy
@@ -1842,9 +1916,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: -0.06, y: -0.21}
+  m_Offset: {x: -0.09, y: -0.20999998}
   serializedVersion: 2
-  m_Size: {x: 0.36, y: 0.36}
+  m_Size: {x: 0.4, y: 0.36}
 --- !u!58 &1404997263
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1898,9 +1972,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.3105145, y: 1.0765898, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1061798444}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
 --- !u!82 &1404997266
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1992,6 +2067,46 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!95 &1404997268
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1404997261}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 32340a82cbf184a16ae7c42bcbee7406, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1404997269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1404997261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efdf55a7009a74ecea0b3a68a14408ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 4
+  damageAmount: 10
+  stunnedCheck: {fileID: 1061798443}
+  stunnedTime: 3
+  stunnedLayer: StunnedEnemy
+  playerLayer: Player
+  isStunned: 0
+  myWaypoints: []
+  waitAtWaypointTime: 1
+  loopWaypoints: 1
+  stunnedSFX: {fileID: 8300000, guid: 5aab25cb97baa4535aadb9a22819faad, type: 3}
+  attackSFX: {fileID: 8300000, guid: 8d85f54dc76d84546ad8a31f6c23c646, type: 3}
 --- !u!4 &1430839378 stripped
 Transform:
   m_PrefabParentObject: {fileID: 478924, guid: 0084f0456662f434a91c89f359a5154b, type: 2}
