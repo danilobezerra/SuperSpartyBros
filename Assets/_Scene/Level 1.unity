@@ -876,6 +876,10 @@ Prefab:
       propertyPath: m_Name
       value: MovingEnemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 11434590, guid: da47ebb02773d4c94aff36e1c3ef599b, type: 2}
+      propertyPath: _myWaypointIndex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: da47ebb02773d4c94aff36e1c3ef599b, type: 2}
   m_IsPrefabParent: 0
